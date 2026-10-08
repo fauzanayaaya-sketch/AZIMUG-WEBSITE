@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azimug Store — Premium Ceramic Mug</title>
+    <meta name="description" content="Azimug Store - Toko mug keramik premium berkualitas tinggi. Tersedia berbagai jenis mug coating dan non-coating dengan harga terjangkau.">
+    <link rel="icon" href="0. LOGO AZIMUG/AZIMUG_Instagram_Profile_Icon_HD.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <!-- Animated Background Orbs -->
+    <div class="bg-orbs">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+        <div class="orb orb-4"></div>
+        <div class="orb orb-5"></div>
+    </div>
+
+    <!-- Particle Canvas -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-content">
+            <div class="loader-logo">
+                <img src="0. LOGO AZIMUG/AZIMUG_Instagram_Profile_Icon_HD.png" alt="Azimug">
+            </div>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+            <p class="loader-text">Memuat Koleksi Premium...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <img src="0. LOGO AZIMUG/AZIMUG_Logo_Horizontal_Master_HD.png" alt="Azimug Store">
+            </a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#hero" class="nav-link active">Beranda</a></li>
+                <li><a href="#about" class="nav-link">Tentang</a></li>
+                <li><a href="#products" class="nav-link">Produk</a></li>
+                <li><a href="#custom" class="nav-link">Custom Design</a></li>
+                <li><a href="#accessories" class="nav-link">Aksesoris</a></li>
+                <li><a href="#contact" class="nav-link">Kontak</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="https://wa.me/6285945015823?text=Halo%20Azimug%20Store%2C%20saya%20ingin%20bertanya%20tentang%20produk" class="nav-cta" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>Order Now</span>
+                </a>
+                <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-container">
+            <div class="hero-content" data-aos="fade-right">
+                <div class="hero-badge">
+                    <i class="fas fa-gem"></i>
+                    <span>Premium Quality Ceramics</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="hero-title-line">Koleksi Mug</span>
+                    <span class="hero-title-line gradient-text">Keramik Premium</span>
+                    <span class="hero-title-line">Terbaik</span>
+                </h1>
+                <p class="hero-description">
+                    Temukan koleksi mug keramik berkualitas tinggi dengan berbagai pilihan desain eksklusif. 
+                    Cocok untuk kebutuhan personal, souvenir, maupun merchandise perusahaan.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#products" class="btn btn-primary">
+                        <span>Lihat Koleksi</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="https://wa.me/6285945015823?text=Halo%20Azimug%20Store%2C%20saya%20ingin%20bertanya%20tentang%20produk" class="btn btn-secondary" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>Hubungi Kami</span>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="12">0</span>
+                        <span class="stat-label">Jenis Produk</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="500">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">Pelanggan Puas</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="100">0</span><span class="stat-plus">%</span>
+                        <span class="stat-label">Keramik Asli</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual" data-aos="fade-left">
+                <div class="hero-image-wrapper">
+                    <div class="hero-glass-card">
+                        <img src="FOTO IKLAN PRODUK/MUG STANDART D-NAN.jpg" alt="Mug Premium Azimug" class="hero-img">
+                    </div>
+                    <div class="floating-card card-1">
+                        <i class="fas fa-star"></i>
+                        <span>Best Seller</span>
+                    </div>
+                    <div class="floating-card card-2">
+                        <i class="fas fa-shield-halved"></i>
+                        <span>Garansi Kualitas</span>
+                    </div>
+                    <div class="floating-card card-3">
+                        <i class="fas fa-truck-fast"></i>
+                        <span>Kirim Seluruh Indonesia</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-dot"></div>
+            </div>
+            <span>Scroll ke bawah</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Tentang Kami</span>
+                <h2 class="section-title">Mengapa Memilih <span class="gradient-text">Azimug Store</span>?</h2>
+                <p class="section-subtitle">Kami menyediakan mug keramik polos berkualitas tinggi yang siap untuk dijadikan media sablon, souvenir, atau merchandise terbaik Anda.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card glass-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h3>Keramik Premium</h3>
+                    <p>Terbuat dari bahan keramik berkualitas tinggi yang kuat, tahan lama, dan aman digunakan sehari-hari.</p>
+                </div>
+                <div class="feature-card glass-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Beragam Pilihan</h3>
+                    <p>12 varian mug polos dengan berbagai bentuk dan warna, dari coating hingga non-coating, siap untuk custom design.</p>
+                </div>
+                <div class="feature-card glass-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="fas fa-tags"></i>
+                    </div>
+                    <h3>Harga Terjangkau</h3>
+                    <p>Dapatkan harga spesial untuk pembelian grosir. Semakin banyak beli, semakin hemat!</p>
+                </div>
+                <div class="feature-card glass-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon">
+                        <i class="fas fa-truck-fast"></i>
+                    </div>
+                    <h3>Pengiriman Aman</h3>
+                    <p>Dikemas dengan aman dan rapi menggunakan box dan paperbag berkualitas untuk menjaga produk tetap sempurna.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Koleksi Kami</span>
+                <h2 class="section-title">Produk Mug <span class="gradient-text">Keramik Polos</span></h2>
+                <p class="section-subtitle">12 varian mug keramik polos berkualitas tinggi, siap untuk dijadikan merchandise, souvenir, atau hadiah istimewa.</p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="filter-buttons" data-aos="fade-up">
+                <button class="filter-btn active" data-filter="all">
+                    <i class="fas fa-th-large"></i>Semua
+                </button>
+                <button class="filter-btn" data-filter="coating">
+                    <i class="fas fa-paint-roller"></i>Coating
+                </button>
+                <button class="filter-btn" data-filter="non-coating">
+                    <i class="fas fa-mug-hot"></i>Non Coating
+                </button>
+                <button class="filter-btn" data-filter="special">
+                    <i class="fas fa-star"></i>Spesial
+                </button>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="products-grid">
+                <!-- Product 1: Tumbler Sport -->
+                <div class="product-card glass-card" data-category="special" data-aos="fade-up" data-aos-delay="50">
+                    <div class="product-badge badge-bestseller">Best Seller</div>
+                    <div class="product-image">
+                        <img src="FOTO IKLAN PRODUK/TUMBLER SPORT.jpg" alt="Tumbler Sport" loading="lazy">
+                        <div class="product-overlay">
+                            <button class="overlay-btn btn-detail" data-product="tumbler-sport">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <a href="https://wa.me/6285945015823?text=Halo%20Azimug%20Store%2C%20saya%20ingin%20memesan%20Tumbler%20Sport" class="overlay-btn btn-order" target="_blank">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Coating • Spesial</span>
+                        <h3 class="product-name">Tumbler Sport</h3>
+                        <p class="product-desc">Berbahan alumunium dengan lapisan coating, ringan dan tahan lama. Dilengkapi carabiner.</p>
+                        <div class="product-price">
+                            <span class="price-current">Rp 35.000</span>
+                            <span class="price-unit">/pcs</span>
+                        </div>
+                        <a href="https://wa.me/6285945015823?text=Halo%20Azimug%20Store%2C%20saya%20ingin%20memesan%20Tumbler%20Sport%20(Rp%2035.000)" class="btn btn-order-card" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Pesan Sekarang
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 2: Mug Standar D-nan -->
+                <div class="product-card glass-card" data-category="coating" data-aos="fade-up" data-aos-delay="100">
+                    <div class="product-badge badge-popular">Populer</div>
+                    <div class="product-image">
+                        <img src="FOTO IKLAN PRODUK/MUG STANDART D-NAN.jpg" alt="Mug Standar D-nan" loading="lazy">
+                        <div class="product-overlay">
+                            <button class="overlay-btn btn-detail" data-product="mug-dnan">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <a href="https://wa.me/6285945015823?text=Halo%20Azimug%20Store%2C%20saya%20ingin%20memesan%20Mug%20Standar%20D-nan" class="overlay-btn btn-order" target="_blank">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Coating</span>
+                        <h3 class="product-name">Mug Standar D-nan</h3>
+                        <p class="product-desc">Terbuat dari keramik berkualitas kuat dan tahan lama. Warna putih elegan dengan lapisan coating halus.</p>
+                        <div class="product-price">
+                            <span class="price-current">Rp 15.000</span>
+                            <span class="price-unit">/pcs</span>
+                        </div>
+                        <a href="https://wa.me/6285945015823?text=Halo%20Azimug%20Store%2C%20saya%20ingin%20memesan%20Mug%20Standar%20D-nan%20(Rp%2015.000)" class="btn btn-order-card" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Pesan Sekarang
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 3: Mug Tea -->
+                <div class="product-card glass-card" data-category="coating" data-aos="fade-up" data-aos-delay="150">
+                    <div class="product-badge badge-new">Hits!</div>
+                    <div class="product-image">
+                        <img src="FOTO IKLAN PRODUK/MUG TEA.jpg" alt="Mug Tea" loading="lazy">
+                        <div class="product-overlay">
+                            <button class="overlay-btn btn-detail" data-product="mug-tea">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <a href="https://wa.me/6285945015823?text=Halo%20Azimug%20Store%2C%20saya%20ingin%20memesan%20Mug%20Tea" class="overlay-btn btn-order" target="_blank">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Coating</span>
+                        <h3 class="product-name">Mug Tea</h3>
+                        <p class="product-desc">Bentuk simpel dan elegant, berbahan keramik berkualitas dengan lapisan coating. Banyak dicari kalangan muda.</p>
+                        <div class="product-price">
+                            <span class="price-current">Rp 16.000</span>
+                            <span class="price-unit">/pcs</span>
+                        </div>
+                        <a href="https://wa.me/6285945015823?text=Halo%20Azimug%20Store%2C%20saya%20ingin%20memesan%20Mug%20Tea%20(Rp%2016.000)" class="btn btn-order-card" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Pesan Sekarang
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 4: Mug Bunglon -->
+                <div class="product-card glass-card" data-category="coating" data-aos="fade-up" data-aos-delay="200">
+                    <div class="product-badge badge-premium">Premium</div>
+                    <div class="product-image">
+                        <img src="FOTO IKLAN PRODUK/MUG BUNGLON.jpg" alt="Mug Bunglon (Hitam)" loading="lazy">
+                        <div class="product-overlay">
+                            <button class="overlay-btn btn-detail" data-product="mug-bunglon">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <a href="https://wa.me/6285945015823?text=Halo%20Azimug%20Store%2C%20saya%20ingin%20memesan%20Mug%20Bunglon" class="overlay-btn btn-order" target="_blank">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Coating • Spesial</span>
+                        <h3 class="product-name">Mug Bunglon (Hitam)</h3>
+                        <p class="product-desc">Mug Magic yang berubah warna saat diisi air panas. Tampilan luar hitam elegan, dalam putih bersih.</p>
+                        <div class="product-price">
+                            <span class="price-current">Rp 35.000</span>
+                            <span class="price-unit">/pcs</span>
+                        </div>
+                        <a href="https://wa.me/6285945015823?text=Halo%20Azimug%20Store%2C%20saya%20ingin%20memesan%20Mug%20Bunglon%20(Rp%2035.000)" class="btn btn-order-card" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Pesan Sekarang
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 5: Mug Standart Warna Import -->
+                <div class="product-card glass-card" data-category="coating" data-aos="fade-up" data-aos-delay="250">
+                    <div class="product-image">
+                        <img src="FOTO IKLAN PRODUK/MUG COATING STANDART WARNA IMPORT.jpg" alt="Mug Standart Warna Import" loading="lazy">
+                        <div class="product-overlay">
+                            <button class="overlay-btn btn-detail" data-product="mug-warna-import">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <a href="https://wa.me/6285945015823?text=Halo%20Azimug%20Store%2C%20saya%20ingin%20memesan%20Mug%20Standart%20Warna%20Import" class="overlay-btn btn-order" target="_blank">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Coating</span>
+                        <h3 class="product-name">Mug Standart Warna Import</h3>
+                        <p class="product-desc">Keramik berkualitas tinggi dengan coating tahan lama. Desain sederhana namun elegan, cocok untuk merchandise.</p>
+                        <div class="product-price">
+                            <span class="price-current">Rp 18.000</span>
+                            <span class="price-unit">/pcs</span>
+                        </div>
+                        <a href="https://wa.me/6285945015823?text=Halo%20Azimug%20Store%2C%20saya%20ingin%20memesan%20Mug%20Standart%20Warna%20Import%20(Rp%2018.000)" class="btn btn-order-card" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Pesan Sekarang
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 6: Mug Standart Warna Dalam -->
+                <div class="product-card glass-card" data-category="coating" data-aos="fade-up" data-aos-delay="300">
+                    <div class="product-badge badge-popular">Populer</div>
+                    <div class="product-image">
+                        <img src="FOTO IKLAN PRODUK/MUG STANDART WARNA DALAM.jpg" alt="Mug Standart Warna Dalam" loading="lazy">
+                        <div class="product-overlay">
+                            <button class="overlay-btn btn-detail" data-product="mug-warna-dalam">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <a href="https://wa.me/6285945015823?text=Halo%20Azimug%20Store%2C%20saya%20ingin%20memesan%20Mug%20Standart%20Warna%20Dalam" class="overlay-btn btn-order" target="_blank">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Coating</span>
+                        <h3 class="product-name">Mug Standart Warna Dalam</h3>
+                        <p class="product-desc">Keramik berkualitas dengan coating tahan lama. Cocok untuk sehari-hari, hadiah, souvenir atau merchandise.</p>
+                        <div class="product-price">
+                            <span class="price-current">Rp 18.000</span>
+                            <span class="price-unit">/pcs</span>
+                        </div>
+                        <a href="https://wa.me/6285945015823?text=Halo%20Azimug%20Store%2C%20saya%20ingin%20memesan%20Mug%20Standart%20Warna%20Dalam%20(Rp%2018.000)" class="btn btn-order-card" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Pesan Sekarang
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 7: Mug Liberty -->
+                <div class="product-card glass-card" data-category="coating" data-aos="fade-up" data-aos-delay="350">
+                    <div class="product-badge badge-new">Unik</div>
+                    <div class="product-image">
+                        <img src="FOTO IKLAN PRODUK/MUG LIBERTY.jpg" alt="Mug Liberty" loading="lazy">
+                        <div class="product-overlay">
+                            <button class="overlay-btn btn-detail" data-product="mug-liberty">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <a href="https://wa.me/6285945015823?text=Halo%20Azimug%20Store%2C%20saya%20ingin%20memesan%20Mug%20Liberty" class="overlay-btn btn-order" target="_blank">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Coating</span>
+                        <h3 class="product-name">Mug Liberty</h3>
+                        <p class="product-desc">Keramik berkualitas dengan bentuk unik, tangkai menyerupai tanduk. Bibir mug berbeda dari yang lainnya.</p>
+                        <div class="product-price">
+                            <span class="price-current">Rp 25.000</span>
+                            <span class="price-unit">/pcs</span>
+                        </div>
+                        <a href="https://wa.me/6285945015823?text=Halo%20Azimug%20Store%2C%20saya%20ingin%20memesan%20Mug%20Liberty%20(Rp%2025.000)" class="btn btn-order-card" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Pesan Sekarang
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 8: Mug Jengki -->
+                <div class="product-card glass-card" data-category="coating" data-aos="fade-up" data-aos-delay="400">
+                    <div class="product-image">
+                        <img src="FOTO IKLAN PRODUK/MUG JENGKI.jpg" alt="Mug / Cangkir Jengki" loading="lazy">
+                        <div class="product-overlay">
+                            <button class="overlay-btn btn-detail" data-product="mug-jengki">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <a href="https://wa.me/6285945015823?text=Halo%20Azimug%20Store%2C%20saya%20ingin%20memesan%20Mug%20Jengki" class="overlay-btn btn-order" target="_blank">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Coating</span>
+                        <h3 class="product-name">Mug / Cangkir Jengki</h3>
+                        <p class="product-desc">Keramik berkualitas yang tahan lama, stylish dan memiliki banyak fungsi untuk keseharian.</p>
+                        <div class="product-price">
+                            <span class="price-current">Rp 16.000</span>
+                            <span class="price-unit">/pcs</span>
+                        </div>
+                        <a href="https://wa.me/6285945015823?text=Halo%20Azimug%20Store%2C%20saya%20ingin%20memesan%20Mug%20Jengki%20(Rp%2016.000)" class="btn btn-order-card" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Pesan Sekarang
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 9: Mug Love -->
+                <div class="product-card glass-card" data-category="coating" data-aos="fade-up" data-aos-delay="450">
+                    <div class="product-badge badge-new">Lucu</div>
+                    <div class="product-image">
+                        <img src="FOTO IKLAN PRODUK/MUG LOVE.jpg" alt="Mug Love" loading="lazy">
+                        <div class="product-overlay">
+                            <button class="overlay-btn btn-detail" data-product="mug-love">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <a href="https://wa.me/6285945015823?text=Halo%20Azimug%20Store%2C%20saya%20ingin%20memesan%20Mug%20Love" class="overlay-btn btn-order" target="_blank">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Coating</span>
+                        <h3 class="product-name">Mug Love</h3>
+                        <p class="product-desc">Bentuk unik berbentuk love yang lucu. Keramik berkualitas dengan coating, warna putih berseri dan bisa di-sablon fullcolour.</p>
+                        <div class="product-price">
+                            <span class="price-current">Rp 16.000</span>
+                            <span class="price-unit">/pcs</span>
+                        </div>
+                        <a href="https://wa.me/6285945015823?text=Halo%20Azimug%20Store%2C%20saya%20ingin%20memesan%20Mug%20Love%20(Rp%2016.000)" class="btn btn-order-card" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Pesan Sekarang
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 10: Mug Non Coating Hitam -->
+                <div class="product-card glass-card" data-category="non-coating" data-aos="fade-up" data-aos-delay="500">
+                    <div class="product-badge badge-bestseller">Best Seller</div>
+                    <div class="product-image">
+                        <img src="FOTO IKLAN PRODUK/MUG NON COATING HITAM.jpg" alt="Mug Non Coating Hitam" loading="lazy">
+                        <div class="product-overlay">
+                            <button class="overlay-btn btn-detail" data-product="mug-non-coating">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <a href="https://wa.me/6285945015823?text=Halo%20Azimug%20Store%2C%20saya%20ingin%20memesan%20Mug%20Non%20Coating%20Hitam" class="overlay-btn btn-order" target="_blank">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Non Coating</span>
+                        <h3 class="product-name">Mug Non Coating Hitam</h3>
+                        <p class="product-desc">Keramik berkualitas warna hitam gagah dan elegant. Best seller, dikhususkan untuk produksi sablon pada mug.</p>
+                        <div class="product-price">
+                            <span class="price-current">Rp 16.000</span>
+                            <span class="price-unit">/pcs</span>
+                        </div>
+                        <a href="https://wa.me/6285945015823?text=Halo%20Azimug%20Store%2C%20saya%20ingin%20memesan%20Mug%20Non%20Coating%20Hitam%20(Rp%2016.000)" class="btn btn-order-card" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Pesan Sekarang
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 11: Mug Corel Putih -->
+                <div class="product-card glass-card" data-category="non-coating" data-aos="fade-up" data-aos-delay="550">
+                    <div class="product-image">
+                        <img src="FOTO IKLAN PRODUK/Gemini_Generated_Image_8cgwsf8cgwsf8cgw.jpg" alt="Mug Corel Putih" loading="lazy">
+                        <div class="product-overlay">
+                            <button class="overlay-btn btn-detail" data-product="mug-corel-putih">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <a href="https://wa.me/6285945015823?text=Halo%20Azimug%20Store%2C%20saya%20ingin%20memesan%20Mug%20Corel%20Putih" class="overlay-btn btn-order" target="_blank">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Non Coating</span>
+                        <h3 class="product-name">Mug Corel Putih</h3>
+                        <p class="product-desc">Mug keramik berkualitas dengan desain simpel dan elegan. Cocok untuk kebutuhan sehari-hari maupun souvenir.</p>
+                        <div class="product-price">
+                            <span class="price-current">Rp 16.000</span>
+                            <span class="price-unit">/pcs</span>
+                        </div>
+                        <a href="https://wa.me/6285945015823?text=Halo%20Azimug%20Store%2C%20saya%20ingin%20memesan%20Mug%20Corel%20Putih%20(Rp%2016.000)" class="btn btn-order-card" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Pesan Sekarang
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 12: Mug Corel Warna -->
+                <div class="product-card glass-card" data-category="non-coating" data-aos="fade-up" data-aos-delay="600">
+                    <div class="product-badge badge-popular">Populer</div>
+                    <div class="product-image">
+                        <img src="FOTO IKLAN PRODUK/MUG COREL WARNA.jpg" alt="Mug Corel Warna" loading="lazy">
+                        <div class="product-overlay">
+                            <button class="overlay-btn btn-detail" data-product="mug-corel-warna">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <a href="https://wa.me/6285945015823?text=Halo%20Azimug%20Store%2C%20saya%20ingin%20memesan%20Mug%20Corel%20Warna" class="overlay-btn btn-order" target="_blank">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Non Coating</span>
+                        <h3 class="product-name">Mug Corel Warna</h3>
+                        <p class="product-desc">Keramik berkualitas terbaik tanpa lapisan coating. Banyak varian warna menarik yang sering dicari.</p>
+                        <div class="product-price">
+                            <span class="price-current">Rp 18.000</span>
+                            <span class="price-unit">/pcs</span>
+                        </div>
+                        <a href="https://wa.me/6285945015823?text=Halo%20Azimug%20Store%2C%20saya%20ingin%20memesan%20Mug%20Corel%20Warna%20(Rp%2018.000)" class="btn btn-order-card" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Pesan Sekarang
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Custom Design Section -->
+    <section class="custom-design" id="custom">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Layanan Spesial</span>
+                <h2 class="section-title">Custom <span class="gradient-text">Design Mug</span></h2>
+                <p class="section-subtitle">Wujudkan desain unik Anda pada mug keramik berkualitas tinggi! Kami menerima custom design untuk kebutuhan personal, souvenir, hingga merchandise perusahaan.</p>
+            </div>
+
+            <!-- Custom Design Showcase -->
+            <div class="custom-showcase" data-aos="fade-up">
+                <div class="custom-main glass-card">
+                    <div class="custom-main-visual">
+                        <div class="custom-mockup">
+                            <div class="mockup-mug">
+                                <img src="FOTO IKLAN PRODUK/MUG STANDART D-NAN.jpg" alt="Custom Design Mug">
+                                <div class="mockup-glow"></div>
+                            </div>
+                            <div class="custom-badge-float">
+                                <i class="fas fa-paint-brush"></i>
+                                <span>Your Design Here!</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="custom-main-info">
+                        <h3><i class="fas fa-wand-magic-sparkles"></i> Buat Mug Impianmu!</h3>
+                        <p>Kirimkan desain, foto, logo, atau gambar apapun — kami akan mencetaknya langsung di mug keramik berkualitas tinggi. Cocok untuk:</p>
+                        <ul class="custom-use-list">
+                            <li>
+                                <i class="fas fa-gift"></i>
+                                <div>
+                                    <strong>Hadiah Spesial</strong>
+                                    <span>Ulang tahun, anniversary, wisuda, atau momen penting lainnya</span>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-building"></i>
+                                <div>
+                                    <strong>Merchandise Perusahaan</strong>
+                                    <span>Cetak logo perusahaan untuk branding & promosi</span>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-heart"></i>
+                                <div>
+                                    <strong>Souvenir Acara</strong>
+                                    <span>Pernikahan, gathering, seminar, atau event kampus</span>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-camera"></i>
+                                <div>
+                                    <strong>Cetak Foto Pribadi</strong>
+                                    <span>Abadikan momen berharga dalam bentuk mug kenangan</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <a href="https://wa.me/6285945015823?text=Halo%20Azimug%20Store%2C%20saya%20ingin%20order%20custom%20design%20mug.%20Berikut%20desain%20saya%3A" class="btn btn-primary" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>Kirim Desain via WhatsApp</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- How It Works -->
+            <div class="custom-steps" data-aos="fade-up">
+                <h3 class="custom-steps-title">Cara Order Custom Design</h3>
+                <div class="steps-grid">
+                    <div class="step-card glass-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="step-number">01</div>
+                        <div class="step-icon"><i class="fas fa-comments"></i></div>
+                        <h4>Hubungi Kami</h4>
+                        <p>Chat via WhatsApp untuk konsultasi desain dan pilih jenis mug yang diinginkan</p>
+                    </div>
+                    <div class="step-connector"><i class="fas fa-arrow-right"></i></div>
+                    <div class="step-card glass-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="step-number">02</div>
+                        <div class="step-icon"><i class="fas fa-paper-plane"></i></div>
+                        <h4>Kirim Desain</h4>
+                        <p>Kirimkan file desain, foto, atau logo Anda. Kami bantu layout yang terbaik</p>
+                    </div>
+                    <div class="step-connector"><i class="fas fa-arrow-right"></i></div>
+                    <div class="step-card glass-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="step-number">03</div>
+                        <div class="step-icon"><i class="fas fa-check-double"></i></div>
+                        <h4>Konfirmasi & Bayar</h4>
+                        <p>Review hasil desain, konfirmasi pesanan dan lakukan pembayaran</p>
+                    </div>
+                    <div class="step-connector"><i class="fas fa-arrow-right"></i></div>
+                    <div class="step-card glass-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="step-number">04</div>
+                        <div class="step-icon"><i class="fas fa-box-open"></i></div>
+                        <h4>Produksi & Kirim</h4>
+                        <p>Mug dicetak dengan kualitas terbaik lalu dikemas aman dan dikirim ke Anda</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Custom Info Cards -->
+            <div class="custom-info-grid" data-aos="fade-up">
+                <div class="custom-info-card glass-card">
+                    <div class="info-icon"><i class="fas fa-image"></i></div>
+                    <h4>Format File</h4>
+                    <p>PNG, JPG, AI, CDR, atau PDF. Resolusi tinggi untuk hasil cetak terbaik.</p>
+                </div>
+                <div class="custom-info-card glass-card">
+                    <div class="info-icon"><i class="fas fa-layer-group"></i></div>
+                    <h4>Teknik Cetak</h4>
+                    <p>Sablon fullcolour berkualitas tinggi, tahan lama, dan tidak mudah luntur.</p>
+                </div>
+                <div class="custom-info-card glass-card">
+                    <div class="info-icon"><i class="fas fa-boxes-stacked"></i></div>
+                    <h4>Min. Order</h4>
+                    <p>Tersedia untuk satuan maupun grosir. Harga spesial untuk order dalam jumlah banyak.</p>
+                </div>
+                <div class="custom-info-card glass-card">
+                    <div class="info-icon"><i class="fas fa-clock"></i></div>
+                    <h4>Estimasi Waktu</h4>
+                    <p>Proses pengerjaan 3–7 hari kerja tergantung jumlah pesanan.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accessories Section -->
+    <section class="accessories" id="accessories">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Pelengkap</span>
+                <h2 class="section-title">Aksesoris & <span class="gradient-text">Packaging</span></h2>
+                <p class="section-subtitle">Lengkapi pembelian mug Anda dengan packaging berkualitas untuk tampilan yang lebih profesional.</p>
+            </div>
+            <div class="accessories-grid">
+                <!-- Box Lubang -->
+                <div class="accessory-card glass-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="accessory-image">
+                        <img src="FOTO IKLAN PRODUK/BOX LUBANG.jpg" alt="Box Lubang" loading="lazy">
+                    </div>
+                    <div class="accessory-info">
+                        <h3>Box Lubang</h3>
+                        <p>Box terlaris dengan lubang yang menampilkan desain mug. Bahan berkualitas, 1 pack isi 50 pcs.</p>
+                        <div class="accessory-price">
+                            <span>Rp 1.200<small>/pcs ecer</small></span>
+                            <span class="price-grosir">Rp 1.100<small>/pcs (1 pack)</small></span>
+                        </div>
+                        <a href="https://wa.me/6285945015823?text=Halo%20Azimug%20Store%2C%20saya%20ingin%20memesan%20Box%20Lubang" class="btn btn-order-card" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Pesan
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Box Marga Kecil -->
+                <div class="accessory-card glass-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="accessory-image">
+                        <img src="FOTO IKLAN PRODUK/BOX MARGA KECIL.jpg" alt="Box Marga Kecil" loading="lazy">
+                    </div>
+                    <div class="accessory-info">
+                        <h3>Box Marga Kecil</h3>
+                        <p>Box polos sederhana untuk wadah mug kecil atau souvenir. Per pack isi 25 pcs.</p>
+                        <div class="accessory-price">
+                            <span>Rp 1.000<small>/pcs</small></span>
+                        </div>
+                        <a href="https://wa.me/6285945015823?text=Halo%20Azimug%20Store%2C%20saya%20ingin%20memesan%20Box%20Marga%20Kecil" class="btn btn-order-card" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Pesan
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Box Tumbler -->
+                <div class="accessory-card glass-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="accessory-image">
+                        <img src="FOTO IKLAN PRODUK/BOX TUMBLER.jpg" alt="Box Tumbler" loading="lazy">
+                    </div>
+                    <div class="accessory-info">
+                        <h3>Box Tumbler</h3>
+                        <p>Box dari kertas duplek berkualitas, wadah untuk berbagai jenis tumbler. Per pack isi 25 pcs.</p>
+                        <div class="accessory-price">
+                            <span>Rp 1.600<small>/pcs</small></span>
+                        </div>
+                        <a href="https://wa.me/6285945015823?text=Halo%20Azimug%20Store%2C%20saya%20ingin%20memesan%20Box%20Tumbler" class="btn btn-order-card" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Pesan
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Paperbag Polos -->
+                <div class="accessory-card glass-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="accessory-image">
+                        <img src="FOTO IKLAN PRODUK/PAPERBAG POLOS.jpg" alt="Paperbag Polos" loading="lazy">
+                    </div>
+                    <div class="accessory-info">
+                        <h3>PaperBag Polos</h3>
+                        <p>Kertas craft berkualitas tinggi, kuat dan ramah lingkungan. Cocok untuk wadah mug dan souvenir.</p>
+                        <div class="accessory-price">
+                            <span>Rp 1.100<small>/pcs</small></span>
+                        </div>
+                        <a href="https://wa.me/6285945015823?text=Halo%20Azimug%20Store%2C%20saya%20ingin%20memesan%20Paperbag%20Polos" class="btn btn-order-card" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Pesan
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-card glass-card" data-aos="zoom-in">
+                <div class="cta-content">
+                    <h2>Tertarik dengan Produk Kami?</h2>
+                    <p>Hubungi kami sekarang melalui WhatsApp untuk mendapatkan penawaran terbaik. Harga spesial untuk pembelian grosir!</p>
+                    <div class="cta-buttons">
+                        <a href="https://wa.me/6285945015823?text=Halo%20Azimug%20Store%2C%20saya%20ingin%20bertanya%20tentang%20harga%20grosir" class="btn btn-primary btn-lg" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>Chat WhatsApp</span>
+                        </a>
+                        <a href="#products" class="btn btn-secondary btn-lg">
+                            <i class="fas fa-arrow-up"></i>
+                            <span>Lihat Produk</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="cta-decoration">
+                    <div class="cta-circle"></div>
+                    <div class="cta-circle"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Hubungi Kami</span>
+                <h2 class="section-title">Kontak <span class="gradient-text">Person</span></h2>
+                <p class="section-subtitle">Jangan ragu untuk menghubungi kami. Kami siap melayani Anda dengan sepenuh hati.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-card glass-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="contact-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3>WhatsApp</h3>
+                    <p>Chat langsung dengan admin kami</p>
+                    <a href="https://wa.me/6285945015823?text=Halo%20Azimug%20Store" class="contact-link" target="_blank">085945015823</a>
+                </div>
+                <div class="contact-card glass-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="contact-icon">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <h3>Instagram</h3>
+                    <p>Follow kami untuk update terbaru</p>
+                    <a href="https://instagram.com/azimugstore" class="contact-link" target="_blank">@azimugstore</a>
+                </div>
+                <div class="contact-card glass-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <p>Kirim pertanyaan via email</p>
+                    <a href="mailto:azimugstore@gmail.com" class="contact-link">azimugstore@gmail.com</a>
+                </div>
+                <div class="contact-card glass-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Lokasi</h3>
+                    <p>Kunjungi toko kami</p>
+                    <span class="contact-link">Yogyakarta, Indonesia</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="0. LOGO AZIMUG/AZIMUG_Logo_Horizontal_Master_HD.png" alt="Azimug Store" class="footer-logo">
+                    <p>Toko mug keramik premium berkualitas tinggi dengan berbagai pilihan desain. Melayani pembelian ecer dan grosir.</p>
+                    <div class="footer-socials">
+                        <a href="https://wa.me/6285945015823" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://instagram.com/azimugstore" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="mailto:azimugstore@gmail.com"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#hero">Beranda</a></li>
+                        <li><a href="#about">Tentang</a></li>
+                        <li><a href="#products">Produk</a></li>
+                        <li><a href="#custom">Custom Design</a></li>
+                        <li><a href="#accessories">Aksesoris</a></li>
+                        <li><a href="#contact">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Kategori Produk</h4>
+                    <ul>
+                        <li><a href="#products">Mug Coating</a></li>
+                        <li><a href="#products">Mug Non Coating</a></li>
+                        <li><a href="#products">Mug Spesial</a></li>
+                        <li><a href="#accessories">Box & Packaging</a></li>
+                        <li><a href="#accessories">Paperbag</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Azimug Store. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Product Detail Modal -->
+    <div class="modal" id="product-modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content glass-card">
+            <button class="modal-close" id="modal-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img src="" alt="" id="modal-img">
+                </div>
+                <div class="modal-info">
+                    <span class="modal-category" id="modal-category"></span>
+                    <h2 class="modal-title" id="modal-title"></h2>
+                    <p class="modal-description" id="modal-description"></p>
+                    <div class="modal-price" id="modal-price"></div>
+                    <div class="modal-details" id="modal-details"></div>
+                    <a href="" class="btn btn-primary btn-lg modal-order-btn" id="modal-order-btn" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>Pesan via WhatsApp</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/6285945015823?text=Halo%20Azimug%20Store%2C%20saya%20ingin%20bertanya%20tentang%20produk" class="whatsapp-float" target="_blank" id="wa-float">
+        <i class="fab fa-whatsapp"></i>
+        <span class="wa-tooltip">Chat dengan kami!</span>
+    </a>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
